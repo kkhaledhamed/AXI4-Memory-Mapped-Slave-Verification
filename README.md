@@ -49,10 +49,9 @@ AXI4 Verification/
 ## 2. Architecture
 
 ```
-## 2. Architecture
 
 <p align="center">
-  <img src="images/architecture.png" alt="Architecture Diagram" width="831" />
+  <img src="images/architecure.pns" alt="Architecture Diagram" width="831" />
 </p>
 
 ```
