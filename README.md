@@ -1,5 +1,3 @@
-<img width="831" height="662" alt="image" src="https://github.com/user-attachments/assets/aa383fac-af9b-418d-bd7c-55c6d9f8e645" /># AXI4 Memory-Mapped Slave — UVM Verification Environment
-
 A UVM environment that verifies a simplified AXI4 slave (`axi4`) with an internal
 1024 x 32-bit synchronous memory (`axi4_memory`). The environment has an **active AXI agent**
 and a **passive memory agent**, each with its own scoreboard and coverage collector, so a
