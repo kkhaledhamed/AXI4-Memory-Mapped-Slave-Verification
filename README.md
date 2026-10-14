@@ -49,7 +49,11 @@ AXI4 Verification/
 ## 2. Architecture
 
 ```
-<img width="831" height="662" alt="image" src="https://github.com/user-attachments/assets/c50dfc3e-4a7c-4f7d-8d08-72cb1de4f6b9" />
+## 2. Architecture
+
+<p align="center">
+  <img src="images/architecture.png" alt="Architecture Diagram" width="831" />
+</p>
 
 ```
 
