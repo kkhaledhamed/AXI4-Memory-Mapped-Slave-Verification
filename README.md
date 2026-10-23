@@ -23,8 +23,8 @@ The supplied QuestaSim report shows **100% in every reported DUT RTL code-covera
 | `axi4_memory` | Branch coverage | **100% (5/5)** |
 | `axi4_memory` | Toggle coverage | **100% (156/156)** |
 | `mem_if` | Toggle coverage | **100% (156/156)** |
-| `mem_sva` | Cover directives | **100% (7/7)** |
-| `mem_sva` | Assertion failures | **0 across 7 assertions** |
+| `mem_sva` | Assertion failures | **0** |
+| `axi_sva` | Assertion failures | **0** |
 
 These are the results shown in the uploaded QuestaSim report. The functional covergroups are described in this README, but their numerical covergroup totals are not listed in that report; they should be taken from the separate functional coverage output when available.
 
