@@ -42,9 +42,6 @@ The testbench uses two UVM agents:
 
 Each side has its own monitor, scoreboard, and functional coverage collector. The AXI scoreboard checks the transaction as seen by a bus master. The memory scoreboard checks the accesses observed at the internal memory interface. Their shadow memories are independent by design, so both checkers do not simply repeat the same model or rely on the same observed transaction object.
 
-### Scope
-
-This is a simplified AXI4-style interface focused on the AW, W, B, AR, and R channels. It does not implement every optional AXI4 feature. The current interface does not expose signals such as `AWBURST`, `ARBURST`, `WSTRB`, or transaction IDs, so the testbench should not be described as a complete verification environment for all AXI4 features.
 
 ## 2. DUT Configuration and Addressing
 
