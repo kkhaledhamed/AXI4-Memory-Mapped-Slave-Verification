@@ -351,11 +351,6 @@ The `R_DATA -> R_WAIT` transition is the repeated-read path used when another be
 
 The report shows activity through the reset branch, the memory-enable branch, and both read/write outcomes. The branch counts include 2,884 writes and 4,307 reads at the memory interface.
 
-### Memory interface: `mem_if`
-
-| Metric | Covered | Result |
-|---|---:|---:|
-| Toggle bins | 156 / 156 | **100%** |
 
 The interface toggle report includes activity on the clock, reset, memory enable/write controls, address, and data signals.
 
