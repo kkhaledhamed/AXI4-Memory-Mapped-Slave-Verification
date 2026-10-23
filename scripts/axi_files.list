@@ -1,0 +1,43 @@
+# RTL
+rtl/Fixed_RTL/axi_memory.v
+rtl/Fixed_RTL/axi4.v
+
+# SVA
+SVA/mem_sva.sv
+SVA/axi_sva.sv
+
+# Shared configuration and AXI package
+tb/shared/common_cfg_pkg.sv
+tb/axi/axi_pkg.sv
+
+# Interfaces
+tb/axi/axi_if.sv
+tb/mem/mem_if.sv
+
+# Transactions
+tb/axi/axi_transaction_pkg.sv
+tb/mem/mem_transaction_pkg.sv
+
+# AXI agent
+tb/axi/axi_agent/axi_sequencer_pkg.sv
+tb/axi/axi_agent/axi_driver_pkg.sv
+tb/axi/axi_agent/axi_monitor_pkg.sv
+tb/axi/axi_agent/axi_agent_pkg.sv
+
+# Memory agent
+tb/mem/memory_agent/mem_monitor_pkg.sv
+tb/mem/memory_agent/mem_agent_pkg.sv
+
+# Scoreboards
+tb/axi/axi_scoreboard_pkg.sv
+tb/mem/mem_scoreboard_pkg.sv
+
+# Coverage
+tb/axi/axi_coverage_pkg.sv
+tb/mem/mem_coverage_pkg.sv
+
+# Sequences, environment, tests, and top
+tb/axi/axi_sequence_pkg.sv
+tb/env/axi_env_pkg.sv
+tb/env/axi_test_pkg.sv
+tb/env/axi_top.sv

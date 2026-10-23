@@ -1,0 +1,180 @@
+# Saving coverage database on exit...
+# End time: 20:39:24 on Oct 23,2026, Elapsed time: 0:00:26
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.axi_top -coverage -assertdebug -sv_seed 1 "+UVM_TESTNAME=axi_random_test" "+UVM_VERBOSITY=UVM_LOW" -l logs/axi_random_test_seed1.log -do "coverage save -onexit -du work.axi4 -du work.axi4_memory cov_results/run_axi_random_test_seed1.ucdb; run -all; quit -sim" 
+# Start time: 20:39:24 on Oct 23,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt10
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.axi_transaction_pkg(fast)
+# Loading work.axi_sequence_pkg(fast)
+# Loading work.mem_transaction_pkg(fast)
+# Loading work.mem_scoreboard_pkg(fast)
+# Loading work.mem_coverage_pkg(fast)
+# Loading work.axi_scoreboard_pkg(fast)
+# Loading work.axi_coverage_pkg(fast)
+# Loading work.mem_if(fast)
+# Loading work.mem_monitor_pkg(fast)
+# Loading work.mem_agent_pkg(fast)
+# Loading work.axi_sequencer_pkg(fast)
+# Loading work.axi_if(fast)
+# Loading work.common_cfg_pkg(fast)
+# Loading work.axi_monitor_pkg(fast)
+# Loading work.axi_driver_pkg(fast)
+# Loading work.axi_agent_pkg(fast)
+# Loading work.axi_env_pkg(fast)
+# Loading work.axi_test_pkg(fast)
+# Loading work.axi_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.axi_top(fast)
+# Loading work.axi_if(fast__2)
+# Loading work.axi4(fast)
+# Loading work.axi4_memory(fast)
+# Loading work.mem_if(fast__2)
+# Loading work.mem_sva(fast)
+# Loading work.axi_sva(fast)
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+# coverage save -onexit -du work.axi4 -du work.axi4_memory cov_results/run_axi_random_test_seed1.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test axi_random_test...
+# UVM_INFO tb/env/axi_test_pkg.sv(135) @ 0: uvm_test_top [axi_random_test] AXI Random Test Build phase
+# UVM_INFO tb/env/axi_env_pkg.sv(32) @ 0: uvm_test_top.axi_env [axi_environment] AXI env build phase
+# UVM_INFO tb/axi/axi_agent/axi_agent_pkg.sv(25) @ 0: uvm_test_top.axi_env.axi_agt [axi_agent] AXI agent build phase
+# UVM_INFO tb/axi/axi_agent/axi_driver_pkg.sv(22) @ 0: uvm_test_top.axi_env.axi_agt.axi_drv [axi_driver] AXI driver build phase
+# UVM_INFO tb/axi/axi_agent/axi_monitor_pkg.sv(25) @ 0: uvm_test_top.axi_env.axi_agt.axi_mon [axi_monitor] AXI monitor build phase
+# UVM_INFO tb/axi/axi_agent/axi_sequencer_pkg.sv(17) @ 0: uvm_test_top.axi_env.axi_agt.axi_seqr [axi_sequencer] AXI sequencer build phase
+# UVM_INFO tb/axi/axi_coverage_pkg.sv(107) @ 0: uvm_test_top.axi_env.axi_cov [axi_coverage] AXI coverage build phase
+# UVM_INFO tb/axi/axi_scoreboard_pkg.sv(32) @ 0: uvm_test_top.axi_env.axi_scb [axi_scoreboard] AXI scoreboard build phase
+# UVM_INFO tb/mem/memory_agent/mem_agent_pkg.sv(19) @ 0: uvm_test_top.axi_env.mem_agt [mem_agent] Memory agent build phase
+# UVM_INFO tb/mem/memory_agent/mem_monitor_pkg.sv(40) @ 0: uvm_test_top.axi_env.mem_agt.mem_mon [mem_monitor] Memory monitor build phase
+# UVM_INFO tb/mem/mem_coverage_pkg.sv(53) @ 0: uvm_test_top.axi_env.mem_cov [mem_coverage] Memory coverage build phase
+# UVM_INFO tb/mem/mem_scoreboard_pkg.sv(41) @ 0: uvm_test_top.axi_env.mem_scb [mem_scoreboard] Memory scoreboard build phase
+# UVM_INFO tb/axi/axi_agent/axi_agent_pkg.sv(40) @ 0: uvm_test_top.axi_env.axi_agt [axi_agent] AXI agent connect phase
+# UVM_INFO tb/axi/axi_coverage_pkg.sv(112) @ 0: uvm_test_top.axi_env.axi_cov [axi_coverage] AXI coverage connect phase
+# UVM_INFO tb/axi/axi_scoreboard_pkg.sv(42) @ 0: uvm_test_top.axi_env.axi_scb [axi_scoreboard] AXI scoreboard connect phase
+# UVM_INFO tb/mem/memory_agent/mem_agent_pkg.sv(27) @ 0: uvm_test_top.axi_env.mem_agt [mem_agent] Memory agent connect phase
+# UVM_INFO tb/mem/mem_coverage_pkg.sv(58) @ 0: uvm_test_top.axi_env.mem_cov [mem_coverage] Memory coverage connect phase
+# UVM_INFO tb/mem/mem_scoreboard_pkg.sv(53) @ 0: uvm_test_top.axi_env.mem_scb [mem_scoreboard] Memory scoreboard connect phase
+# UVM_INFO tb/env/axi_env_pkg.sv(50) @ 0: uvm_test_top.axi_env [axi_environment] AXI env connect phase
+# UVM_INFO tb/env/axi_test_pkg.sv(148) @ 0: uvm_test_top [axi_random_test] Starting AXI end of elaboration phase
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ------------------------------------------------------------------
+# Name                       Type                        Size  Value
+# ------------------------------------------------------------------
+# uvm_test_top               axi_random_test             -     @483 
+#   axi_env                  axi_environment             -     @490 
+#     axi_agt                axi_agent                   -     @507 
+#       axi_drv              axi_driver                  -     @773 
+#         rsp_port           uvm_analysis_port           -     @788 
+#         seq_item_port      uvm_seq_item_pull_port      -     @780 
+#       axi_mon              axi_monitor                 -     @905 
+#         axi_ap             uvm_analysis_port           -     @912 
+#       axi_seqr             axi_sequencer               -     @796 
+#         rsp_export         uvm_analysis_export         -     @803 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @897 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+#     axi_cov                axi_coverage                -     @521 
+#       analysis_exp         uvm_analysis_export         -     @528 
+#       cov_fifo             uvm_tlm_analysis_fifo #(T)  -     @536 
+#         analysis_export    uvm_analysis_imp            -     @575 
+#         get_ap             uvm_analysis_port           -     @567 
+#         get_peek_export    uvm_get_peek_imp            -     @551 
+#         put_ap             uvm_analysis_port           -     @559 
+#         put_export         uvm_put_imp                 -     @543 
+#     axi_scb                axi_scoreboard              -     @583 
+#       analysis_exp         uvm_analysis_export         -     @590 
+#       scb_fifo             uvm_tlm_analysis_fifo #(T)  -     @598 
+#         analysis_export    uvm_analysis_imp            -     @637 
+#         get_ap             uvm_analysis_port           -     @629 
+#         get_peek_export    uvm_get_peek_imp            -     @613 
+#         put_ap             uvm_analysis_port           -     @621 
+#         put_export         uvm_put_imp                 -     @605 
+#     mem_agt                mem_agent                   -     @514 
+#       mem_mon              mem_monitor                 -     @928 
+#         mem_ap             uvm_analysis_port           -     @935 
+#     mem_cov                mem_coverage                -     @645 
+#       mem_analysis_exp     uvm_analysis_export         -     @652 
+#       mem_cov_fifo         uvm_tlm_analysis_fifo #(T)  -     @660 
+#         analysis_export    uvm_analysis_imp            -     @699 
+#         get_ap             uvm_analysis_port           -     @691 
+#         get_peek_export    uvm_get_peek_imp            -     @675 
+#         put_ap             uvm_analysis_port           -     @683 
+#         put_export         uvm_put_imp                 -     @667 
+#     mem_scb                mem_scoreboard              -     @707 
+#       mem_analysis_exp     uvm_analysis_export         -     @714 
+#       mem_scb_fifo         uvm_tlm_analysis_fifo #(T)  -     @722 
+#         analysis_export    uvm_analysis_imp            -     @761 
+#         get_ap             uvm_analysis_port           -     @753 
+#         get_peek_export    uvm_get_peek_imp            -     @737 
+#         put_ap             uvm_analysis_port           -     @745 
+#         put_export         uvm_put_imp                 -     @729 
+# ------------------------------------------------------------------
+# 
+# UVM_INFO tb/mem/mem_scoreboard_pkg.sv(60) @ 0: uvm_test_top.axi_env.mem_scb [mem_scoreboard] Memory scoreboard run phase
+# UVM_INFO tb/mem/mem_coverage_pkg.sv(64) @ 0: uvm_test_top.axi_env.mem_cov [mem_coverage] Memory coverage run phase
+# UVM_INFO tb/mem/memory_agent/mem_monitor_pkg.sv(63) @ 0: uvm_test_top.axi_env.mem_agt.mem_mon [mem_monitor] Memory monitor run phase
+# UVM_INFO tb/axi/axi_scoreboard_pkg.sv(49) @ 0: uvm_test_top.axi_env.axi_scb [axi_scoreboard] AXI scoreboard run phase
+# UVM_INFO tb/axi/axi_coverage_pkg.sv(118) @ 0: uvm_test_top.axi_env.axi_cov [axi_coverage] AXI coverage run phase
+# UVM_INFO tb/axi/axi_agent/axi_monitor_pkg.sv(32) @ 0: uvm_test_top.axi_env.axi_agt.axi_mon [axi_monitor] AXI monitor run phase
+# UVM_INFO tb/axi/axi_agent/axi_driver_pkg.sv(29) @ 0: uvm_test_top.axi_env.axi_agt.axi_drv [axi_driver] AXI driver run phase
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 125135: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO tb/axi/axi_scoreboard_pkg.sv(199) @ 125135: uvm_test_top.axi_env.axi_scb [axi_scoreboard] AXI SCOREBOARD SUMMARY: Passed = 2727, Failed = 0, Total = 2727
+# UVM_INFO tb/mem/mem_scoreboard_pkg.sv(166) @ 125135: uvm_test_top.axi_env.mem_scb [mem_scoreboard] MEM SCOREBOARD SUMMARY: Passed = 3572, Failed = 0, Total = 3572
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   32
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [axi_agent]     2
+# [axi_coverage]     3
+# [axi_driver]     2
+# [axi_environment]     2
+# [axi_monitor]     2
+# [axi_random_test]     2
+# [axi_scoreboard]     4
+# [axi_sequencer]     1
+# [mem_agent]     2
+# [mem_coverage]     3
+# [mem_monitor]     2
+# [mem_scoreboard]     4
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 125135 ns  Iteration: 54  Instance: /axi_top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+#  quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (F:/DIGITAL/Projects/AXI4 Verification/axi_project.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (F:/DIGITAL/Projects/AXI4 Verification/axi_project.mpf).  File can not be renamed.

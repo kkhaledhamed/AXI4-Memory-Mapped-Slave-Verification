@@ -1,0 +1,1527 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /\axi_top#dut /mem_inst/mem_if_inst
+=== Design Unit: work.mem_if
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        156       156         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\axi_top#dut /mem_inst/mem_if_inst --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                               clk           4           4      100.00 
+                                     mem_addr[0-8]           4           4      100.00 
+                                       mem_addr[9]           3           4      100.00 
+                                            mem_en           4           4      100.00 
+                                    mem_rdata[0-5]           4           4      100.00 
+                                      mem_rdata[6]           3           4      100.00 
+                                      mem_rdata[7]           3           3      100.00 
+                                   mem_rdata[8-10]           4           4      100.00 
+                                  mem_rdata[11-13]           3           3      100.00 
+                                     mem_rdata[14]           4           4      100.00 
+                                     mem_rdata[15]           3           3      100.00 
+                                  mem_rdata[16-19]           4           4      100.00 
+                                  mem_rdata[20-21]           3           3      100.00 
+                                  mem_rdata[22-24]           4           4      100.00 
+                                  mem_rdata[25-26]           3           3      100.00 
+                                     mem_rdata[27]           4           4      100.00 
+                                     mem_rdata[28]           3           3      100.00 
+                                  mem_rdata[29-30]           4           4      100.00 
+                                     mem_rdata[31]           3           3      100.00 
+                                    mem_wdata[0-5]           4           4      100.00 
+                                      mem_wdata[6]           3           4      100.00 
+                                      mem_wdata[7]           3           3      100.00 
+                                   mem_wdata[8-10]           4           4      100.00 
+                                  mem_wdata[11-13]           3           3      100.00 
+                                     mem_wdata[14]           4           4      100.00 
+                                     mem_wdata[15]           3           3      100.00 
+                                  mem_wdata[16-19]           4           4      100.00 
+                                  mem_wdata[20-21]           3           3      100.00 
+                                  mem_wdata[22-24]           4           4      100.00 
+                                  mem_wdata[25-26]           3           3      100.00 
+                                     mem_wdata[27]           4           4      100.00 
+                                     mem_wdata[28]           3           3      100.00 
+                                  mem_wdata[29-30]           4           4      100.00 
+                                     mem_wdata[31]           3           3      100.00 
+                                            mem_we           4           4      100.00 
+                                             rst_n           4           4      100.00 
+
+Total Node Count     =         78 
+Toggled Node Count   =         78 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (156 of 156 bins)
+
+=================================================================================
+=== Instance: /\axi_top#dut /mem_inst/memory_assertions
+=== Design Unit: work.mem_sva
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       7         7         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/\axi_top#dut /mem_inst/memory_assertions/reset_assertion
+                     SVA/mem_sva.sv(57)                 0         72      39564          0      39636          0           4 off
+/\axi_top#dut /mem_inst/memory_assertions/write_enable_assertion
+                     SVA/mem_sva.sv(60)                 0       2884      36680         72      39636          0           4 off
+/\axi_top#dut /mem_inst/memory_assertions/address_known_assertion
+                     SVA/mem_sva.sv(63)                 0       7191      32373         72      39636          0           4 off
+/\axi_top#dut /mem_inst/memory_assertions/address_range_assertion
+                     SVA/mem_sva.sv(66)                 0       7191      32373         72      39636          0           4 off
+/\axi_top#dut /mem_inst/memory_assertions/write_data_assertion
+                     SVA/mem_sva.sv(69)                 0       2884      36680         72      39636          0           4 off
+/\axi_top#dut /mem_inst/memory_assertions/read_data_known_assertion
+                     SVA/mem_sva.sv(72)                 0       4307      35257         72      39636          0           4 off
+/\axi_top#dut /mem_inst/memory_assertions/read_data_stable_assertion
+                     SVA/mem_sva.sv(75)                 0      35239       4307         86      39636          4           8 off
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        14         0        14     0.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\axi_top#dut /mem_inst/memory_assertions
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File SVA/mem_sva.sv
+------------------------------------IF Branch------------------------------------
+    58                                   ***0***     Count coming in to IF
+    58              1                    ***0***             else `uvm_error("MEM_SVA", "Reset behavior failed")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    61                                   ***0***     Count coming in to IF
+    61              1                    ***0***             else `uvm_error("MEM_SVA", "mem_we asserted while mem_en is low")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    64                                   ***0***     Count coming in to IF
+    64              1                    ***0***             else `uvm_error("MEM_SVA", "Memory address is X/Z")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    67                                   ***0***     Count coming in to IF
+    67              1                    ***0***             else `uvm_error("MEM_SVA", "Memory address out of range")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    70                                   ***0***     Count coming in to IF
+    70              1                    ***0***             else `uvm_error("MEM_SVA", "Write data is X/Z")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    73                                   ***0***     Count coming in to IF
+    73              1                    ***0***             else `uvm_error("MEM_SVA", "Read data is X/Z")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    76                                   ***0***     Count coming in to IF
+    76              1                    ***0***             else `uvm_error("MEM_SVA", "Read data changed without a read")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+
+Directive Coverage:
+    Directives                       7         7         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\axi_top#dut /mem_inst/memory_assertions/reset_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(81)
+                                                                                72 Covered   
+/\axi_top#dut /mem_inst/memory_assertions/write_enable_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(83)
+                                                                              2884 Covered   
+/\axi_top#dut /mem_inst/memory_assertions/address_known_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(85)
+                                                                              7191 Covered   
+/\axi_top#dut /mem_inst/memory_assertions/address_range_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(87)
+                                                                              7191 Covered   
+/\axi_top#dut /mem_inst/memory_assertions/write_data_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(89)
+                                                                              2884 Covered   
+/\axi_top#dut /mem_inst/memory_assertions/read_data_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(91)
+                                                                              4307 Covered   
+/\axi_top#dut /mem_inst/memory_assertions/read_data_stable_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(93)
+                                                                              35239 Covered   
+
+=================================================================================
+=== Instance: /\axi_top#dut /mem_inst
+=== Design Unit: work.axi4_memory
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         5         5         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\axi_top#dut /mem_inst
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File rtl/Fixed_RTL/axi_memory.v
+------------------------------------IF Branch------------------------------------
+    22                                     13103     Count coming in to IF
+    22              1                         36             if (!rst_n) begin
+    27              1                       7191             else if (mem_en) begin
+                                            5876     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    28                                      7191     Count coming in to IF
+    28              1                       2884                 if (mem_we)
+    30              1                       4307                  else 
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       7         7         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\axi_top#dut /mem_inst --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File rtl/Fixed_RTL/axi_memory.v
+    1                                                module axi4_memory #(
+    2                                                    parameter DATA_WIDTH = 32,
+    3                                                    parameter ADDR_WIDTH = 10,   
+    4                                                    parameter DEPTH = 1024
+    5                                                )(
+    6                                                    input  wire                     clk,
+    7                                                    input  wire                     rst_n,
+    8                                                    
+    9                                                    input  wire                     mem_en,
+    10                                                   input  wire                     mem_we,
+    11                                                   input  wire [ADDR_WIDTH-1:0]    mem_addr,
+    12                                                   input  wire [DATA_WIDTH-1:0]    mem_wdata,
+    13                                                   output reg  [DATA_WIDTH-1:0]    mem_rdata
+    14                                               );
+    15                                               
+    16                                                   // Memory array
+    17                                                   reg [DATA_WIDTH-1:0] memory [0:DEPTH-1];
+    18                                                   
+    19                                                   integer j;
+    20                                               
+    21              1                      13103         always @(posedge clk or negedge rst_n) begin
+    22                                                       if (!rst_n) begin
+    23              1                         36                 mem_rdata <= 0;
+    24              1                         36                 for (j = 0; j < DEPTH; j = j + 1)
+    24              2                      36864     
+    25              1                      36864                     memory[j] = 0;
+    26                                                       end
+    27                                                       else if (mem_en) begin
+    28                                                           if (mem_we)
+    29              1                       2884                     memory[mem_addr] <= mem_wdata;
+    30                                                            else 
+    31              1                       4307                    mem_rdata <= memory[mem_addr] ;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        156       156         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\axi_top#dut /mem_inst --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                               clk           4           4      100.00 
+                                     mem_addr[0-8]           4           4      100.00 
+                                       mem_addr[9]           3           4      100.00 
+                                            mem_en           4           4      100.00 
+                                    mem_rdata[0-5]           4           4      100.00 
+                                      mem_rdata[6]           3           4      100.00 
+                                      mem_rdata[7]           3           3      100.00 
+                                   mem_rdata[8-10]           4           4      100.00 
+                                  mem_rdata[11-13]           3           3      100.00 
+                                     mem_rdata[14]           4           4      100.00 
+                                     mem_rdata[15]           3           3      100.00 
+                                  mem_rdata[16-19]           4           4      100.00 
+                                  mem_rdata[20-21]           3           3      100.00 
+                                  mem_rdata[22-24]           4           4      100.00 
+                                  mem_rdata[25-26]           3           3      100.00 
+                                     mem_rdata[27]           4           4      100.00 
+                                     mem_rdata[28]           3           3      100.00 
+                                  mem_rdata[29-30]           4           4      100.00 
+                                     mem_rdata[31]           3           3      100.00 
+                                    mem_wdata[0-5]           4           4      100.00 
+                                      mem_wdata[6]           3           4      100.00 
+                                      mem_wdata[7]           3           3      100.00 
+                                   mem_wdata[8-10]           4           4      100.00 
+                                  mem_wdata[11-13]           3           3      100.00 
+                                     mem_wdata[14]           4           4      100.00 
+                                     mem_wdata[15]           3           3      100.00 
+                                  mem_wdata[16-19]           4           4      100.00 
+                                  mem_wdata[20-21]           3           3      100.00 
+                                  mem_wdata[22-24]           4           4      100.00 
+                                  mem_wdata[25-26]           3           3      100.00 
+                                     mem_wdata[27]           4           4      100.00 
+                                     mem_wdata[28]           3           3      100.00 
+                                  mem_wdata[29-30]           4           4      100.00 
+                                     mem_wdata[31]           3           3      100.00 
+                                            mem_we           4           4      100.00 
+                                             rst_n           4           4      100.00 
+
+Total Node Count     =         78 
+Toggled Node Count   =         78 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (156 of 156 bins)
+
+=================================================================================
+=== Instance: /\axi_top#dut 
+=== Design Unit: work.axi4
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        30        30         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\axi_top#dut 
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File rtl/Fixed_RTL/axi4.v
+------------------------------------IF Branch------------------------------------
+    102                                    31588     Count coming in to IF
+    102             1                         36             if (!ARESETn) begin
+    134             1                      31552             end else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    142                                    31552     Count coming in to CASE
+    143             1                      21623                     W_IDLE: begin
+    160             1                        980                     W_ADDR: begin
+    166             1                       7227                     W_DATA: begin
+    197             1                       1718                     W_RESP: begin
+    205             1                          4                     default: write_state <= W_IDLE;
+Branch totals: 5 hits of 5 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    148                                    21623     Count coming in to IF
+    148             1                        980                         if (AWVALID && AWREADY) begin
+                                           20643     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    169                                     4784     Count coming in to IF
+    169             1                       2884                             if (write_addr_valid && !write_boundary_cross) begin
+                                            1900     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    178                                     4784     Count coming in to IF
+    178             1                        980                             if (WLAST || write_burst_cnt == 0) begin
+    189             1                       3804                             end else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    183                                      980     Count coming in to IF
+    183             1                        283                                 if (!write_addr_valid || write_boundary_cross) begin
+    185             1                        697                                 end else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    211                                    31552     Count coming in to CASE
+    212             1                      14617                     R_IDLE: begin
+    229             1                        980                     R_ADDR: begin
+    238             1                       4568                     R_WAIT:  begin
+    243             1                      11383                     R_DATA: begin
+    275             1                          4                     default: read_state <= R_IDLE;
+Branch totals: 5 hits of 5 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    217                                    14617     Count coming in to IF
+    217             1                        980                         if (ARVALID && ARREADY) begin
+                                           13637     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    231                                      980     Count coming in to IF
+    231             1                        719                         if (read_addr_valid && !read_boundary_cross) begin
+                                             261     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    245                                    11383     Count coming in to IF
+    245             1                       7243                         if (read_addr_valid && !read_boundary_cross) begin
+    248             1                       4140                         end else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    256                                    11383     Count coming in to IF
+    256             1                       4568                         if (RREADY && RVALID) begin
+                                            6815     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    259                                     4568     Count coming in to IF
+    259             1                       3588                             if (read_burst_cnt > 0) begin
+    268             1                        980                             end else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      21        21         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /\axi_top#dut  --
+
+  File rtl/Fixed_RTL/axi4.v
+----------------Focused Condition View-------------------
+Line       148 Item    1  (AWVALID && AWREADY)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+     AWVALID         Y
+     AWREADY         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          4  AWVALID_0             -                             
+  Row   2:          4  AWVALID_1             AWREADY                       
+  Row   4:          4  AWREADY_1             AWVALID                       
+
+----------------Focused Condition View-------------------
+Line       167 Item    1  (WVALID && WREADY)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      WVALID         Y
+      WREADY         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   2:          4  WVALID_1              WREADY                        
+  Row   4:          4  WREADY_1              WVALID                        
+
+----------------Focused Condition View-------------------
+Line       169 Item    1  (write_addr_valid && ~write_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+      write_addr_valid         Y
+  write_boundary_cross         Y
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:          3  write_addr_valid_0      -                             
+  Row   2:          4  write_addr_valid_1      ~write_boundary_cross         
+  Row   3:          4  write_boundary_cross_0  write_addr_valid              
+  Row   4:          3  write_boundary_cross_1  write_addr_valid              
+
+----------------Focused Condition View-------------------
+Line       178 Item    1  (WLAST || (write_burst_cnt == 0))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+                   WLAST         Y
+  (write_burst_cnt == 0)         Y
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:          3  WLAST_0                   ~(write_burst_cnt == 0)       
+  Row   2:          4  WLAST_1                   -                             
+  Row   3:          3  (write_burst_cnt == 0)_0  ~WLAST                        
+
+----------------Focused Condition View-------------------
+Line       183 Item    1  (~write_addr_valid || write_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+      write_addr_valid         Y
+  write_boundary_cross         Y
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:          3  write_addr_valid_0      -                             
+  Row   2:          4  write_addr_valid_1      ~write_boundary_cross         
+  Row   3:          4  write_boundary_cross_0  write_addr_valid              
+  Row   4:          2  write_boundary_cross_1  write_addr_valid              
+
+----------------Focused Condition View-------------------
+Line       198 Item    1  (BREADY && BVALID)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      BREADY         Y
+      BVALID         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   2:          4  BREADY_1              BVALID                        
+  Row   4:          4  BVALID_1              BREADY                        
+
+----------------Focused Condition View-------------------
+Line       217 Item    1  (ARVALID && ARREADY)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+     ARVALID         Y
+     ARREADY         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   2:          4  ARVALID_1             ARREADY                       
+  Row   4:          4  ARREADY_1             ARVALID                       
+
+----------------Focused Condition View-------------------
+Line       231 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+           Input Term   Covered  Reason for no coverage   Hint
+          -----------  --------  -----------------------  --------------
+      read_addr_valid         Y
+  read_boundary_cross         Y
+
+     Rows:       Hits  FEC Target             Non-masking condition(s)      
+ ---------  ---------  --------------------   -------------------------     
+  Row   2:          4  read_addr_valid_1      ~read_boundary_cross          
+  Row   3:          4  read_boundary_cross_0  read_addr_valid               
+  Row   4:          3  read_boundary_cross_1  read_addr_valid               
+
+----------------Focused Condition View-------------------
+Line       245 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+           Input Term   Covered  Reason for no coverage   Hint
+          -----------  --------  -----------------------  --------------
+      read_addr_valid         Y
+  read_boundary_cross         Y
+
+     Rows:       Hits  FEC Target             Non-masking condition(s)      
+ ---------  ---------  --------------------   -------------------------     
+  Row   1:          3  read_addr_valid_0      -                             
+  Row   2:          4  read_addr_valid_1      ~read_boundary_cross          
+  Row   3:          4  read_boundary_cross_0  read_addr_valid               
+  Row   4:          3  read_boundary_cross_1  read_addr_valid               
+
+----------------Focused Condition View-------------------
+Line       256 Item    1  (RREADY && RVALID)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      RREADY         Y
+      RVALID         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   2:          4  RREADY_1              RVALID                        
+  Row   3:          3  RVALID_0              RREADY                        
+  Row   4:          4  RVALID_1              RREADY                        
+
+----------------Focused Condition View-------------------
+Line       259 Item    1  (read_burst_cnt > 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (read_burst_cnt > 0)         Y
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:          4  (read_burst_cnt > 0)_0  -                             
+  Row   2:          3  (read_burst_cnt > 0)_1  -                             
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      5         5         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /\axi_top#dut  --
+
+  File rtl/Fixed_RTL/axi4.v
+----------------Focused Expression View-----------------
+Line       66 Item    1  (((AWADDR & 4095) + ((write_burst_len + 1) << write_size)) > (4095 + 1'b1))
+Expression totals: 1 of 1 input term covered = 100.00%
+
+                                                                   Input Term   Covered  Reason for no coverage   Hint
+                                                                  -----------  --------  -----------------------  --------------
+  (((AWADDR & 4095) + ((write_burst_len + 1) << write_size)) > (4095 + 1'b1))         Y
+
+     Rows:       Hits  FEC Target                                                                     Non-masking condition(s)      
+ ---------  ---------  --------------------                                                           -------------------------     
+  Row   1:          4  (((AWADDR & 4095) + ((write_burst_len + 1) << write_size)) > (4095 + 1'b1))_0  -                             
+  Row   2:          3  (((AWADDR & 4095) + ((write_burst_len + 1) << write_size)) > (4095 + 1'b1))_1  -                             
+
+----------------Focused Expression View-----------------
+Line       67 Item    1  (((ARADDR & 4095) + ((read_burst_len + 1) << read_size)) > (4095 + 1'b1))
+Expression totals: 1 of 1 input term covered = 100.00%
+
+                                                                 Input Term   Covered  Reason for no coverage   Hint
+                                                                -----------  --------  -----------------------  --------------
+  (((ARADDR & 4095) + ((read_burst_len + 1) << read_size)) > (4095 + 1'b1))         Y
+
+     Rows:       Hits  FEC Target                                                                   Non-masking condition(s)      
+ ---------  ---------  --------------------                                                         -------------------------     
+  Row   1:          4  (((ARADDR & 4095) + ((read_burst_len + 1) << read_size)) > (4095 + 1'b1))_0  -                             
+  Row   2:          3  (((ARADDR & 4095) + ((read_burst_len + 1) << read_size)) > (4095 + 1'b1))_1  -                             
+
+----------------Focused Expression View-----------------
+Line       70 Item    1  ((write_addr >> 2) < 1024)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+                  Input Term   Covered  Reason for no coverage   Hint
+                 -----------  --------  -----------------------  --------------
+  ((write_addr >> 2) < 1024)         Y
+
+     Rows:       Hits  FEC Target                    Non-masking condition(s)      
+ ---------  ---------  --------------------          -------------------------     
+  Row   1:          3  ((write_addr >> 2) < 1024)_0  -                             
+  Row   2:          4  ((write_addr >> 2) < 1024)_1  -                             
+
+----------------Focused Expression View-----------------
+Line       71 Item    1  ((read_addr >> 2) < 1024)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+                 Input Term   Covered  Reason for no coverage   Hint
+                -----------  --------  -----------------------  --------------
+  ((read_addr >> 2) < 1024)         Y
+
+     Rows:       Hits  FEC Target                   Non-masking condition(s)      
+ ---------  ---------  --------------------         -------------------------     
+  Row   1:          3  ((read_addr >> 2) < 1024)_0  -                             
+  Row   2:          4  ((read_addr >> 2) < 1024)_1  -                             
+
+----------------Focused Expression View-----------------
+Line       254 Item    1  (read_burst_cnt == 0)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+             Input Term   Covered  Reason for no coverage   Hint
+            -----------  --------  -----------------------  --------------
+  (read_burst_cnt == 0)         Y
+
+     Rows:       Hits  FEC Target               Non-masking condition(s)      
+ ---------  ---------  --------------------     -------------------------     
+  Row   1:          3  (read_burst_cnt == 0)_0  -                             
+  Row   2:          4  (read_burst_cnt == 0)_1  -                             
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       8         8         0   100.00%
+    FSM Transitions                  9         9         0   100.00%
+
+================================FSM Details================================
+
+FSM Coverage for instance /\axi_top#dut  --
+
+FSM_ID: write_state
+    Current State Object : write_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 143              W_IDLE                   0
+ 160              W_ADDR                   1
+ 166              W_DATA                   2
+ 197              W_RESP                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  W_IDLE                1016          
+                  W_ADDR                 980          
+                  W_DATA                 980          
+                  W_RESP                 980          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 156                   0                 980          W_IDLE -> W_ADDR              
+ 163                   1                 980          W_ADDR -> W_DATA              
+ 180                   3                 980          W_DATA -> W_RESP              
+ 201                   5                 980          W_RESP -> W_IDLE              
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         4         0   100.00%
+        FSM Transitions              4         4         0   100.00%
+FSM_ID: read_state
+    Current State Object : read_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 212              R_IDLE                   0
+ 229              R_ADDR                   1
+ 238              R_WAIT                   2
+ 243              R_DATA                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  R_IDLE                1016          
+                  R_ADDR                 980          
+                  R_WAIT                4568          
+                  R_DATA                4568          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 225                   0                 980          R_IDLE -> R_ADDR              
+ 235                   1                 980          R_ADDR -> R_WAIT              
+ 239                   3                4568          R_WAIT -> R_DATA              
+ 270                   5                 980          R_DATA -> R_IDLE              
+ 267                   6                3588          R_DATA -> R_WAIT              
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         4         0   100.00%
+        FSM Transitions              5         5         0   100.00%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      87        87         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\axi_top#dut  --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File rtl/Fixed_RTL/axi4.v
+    1                                                module axi4 #(
+    2                                                    parameter DATA_WIDTH = 32,
+    3                                                    parameter ADDR_WIDTH = 16,
+    4                                                    parameter MEMORY_DEPTH = 1024
+    5                                                )(
+    6                                                    input  wire                     ACLK,
+    7                                                    input  wire                     ARESETn,
+    8                                                
+    9                                                    // Write address channel
+    10                                                   input  wire [ADDR_WIDTH-1:0]    AWADDR,
+    11                                                   input  wire [7:0]               AWLEN,
+    12                                                   input  wire [2:0]               AWSIZE,
+    13                                                   input  wire                     AWVALID,
+    14                                                   output reg                      AWREADY,
+    15                                               
+    16                                                   // Write data channel
+    17                                                   input  wire [DATA_WIDTH-1:0]    WDATA,
+    18                                                   input  wire                     WVALID,
+    19                                                   input  wire                     WLAST,
+    20                                                   output reg                      WREADY,
+    21                                               
+    22                                                   // Write response channel
+    23                                                   output reg [1:0]                BRESP,
+    24                                                   output reg                      BVALID,
+    25                                                   input  wire                     BREADY,
+    26                                               
+    27                                                   // Read address channel
+    28                                                   input  wire [ADDR_WIDTH-1:0]    ARADDR,
+    29                                                   input  wire [7:0]               ARLEN,
+    30                                                   input  wire [2:0]               ARSIZE,
+    31                                                   input  wire                     ARVALID,
+    32                                                   output reg                      ARREADY,
+    33                                               
+    34                                                   // Read data channel
+    35                                                   output reg [DATA_WIDTH-1:0]     RDATA,
+    36                                                   output reg [1:0]                RRESP,
+    37                                                   output reg                      RVALID,
+    38                                                   output reg                      RLAST,
+    39                                                   input  wire                     RREADY
+    40                                               );
+    41                                               
+    42                                               
+    43                                                   // Internal memory signals, Byte addressable
+    44                                                   reg mem_en, mem_we;
+    45                                                   reg [$clog2(MEMORY_DEPTH)-1:0] mem_addr;
+    46                                                   reg [DATA_WIDTH-1:0] mem_wdata;
+    47                                                   wire [DATA_WIDTH-1:0] mem_rdata;
+    48                                               
+    49                                                   // Address and burst management
+    50                                                   reg [ADDR_WIDTH-1:0] write_addr, read_addr;
+    51                                                   reg [7:0] write_burst_len, read_burst_len;
+    52                                                   reg [7:0] write_burst_cnt, read_burst_cnt;
+    53                                                   reg [2:0] write_size, read_size;
+    54                                                   
+    55                                                   wire [ADDR_WIDTH-1:0] write_addr_incr,read_addr_incr;
+    56                                                   
+    57                                                   // Missing declarations    
+    58                                                   wire write_boundary_cross, read_boundary_cross;
+    59                                                   wire write_addr_valid, read_addr_valid;
+    60                                                   
+    61                                                   // Address increment calculation
+    62              1                         40         assign  write_addr_incr = (1 << write_size);
+    63              1                         40         assign  read_addr_incr  = (1 << read_size);
+    64                                                   
+    65                                                   // Address boundary check (4KB boundary = 12 bits)
+    66              1                       1674         assign write_boundary_cross = ((AWADDR & 12'hFFF) + (write_burst_len+1 << write_size)) > (12'hFFF+1'b1);
+    67              1                       1694         assign read_boundary_cross = ((ARADDR & 12'hFFF) + (read_burst_len+1 << read_size)) > (12'hFFF+1'b1);
+    68                                                   
+    69                                                   // Address range check
+    70              1                       4797         assign write_addr_valid = (write_addr >> 2) < MEMORY_DEPTH;
+    71              1                       4584         assign read_addr_valid = (read_addr >> 2) < MEMORY_DEPTH;
+    72                                               
+    73                                                   // Memory instance
+    74                                                   axi4_memory #(
+    75                                                       .DATA_WIDTH(DATA_WIDTH),
+    76                                                       .ADDR_WIDTH($clog2(MEMORY_DEPTH)),
+    77                                                       .DEPTH(MEMORY_DEPTH)
+    78                                                   ) mem_inst (
+    79                                                       .clk(ACLK),
+    80                                                       .rst_n(ARESETn),
+    81                                                       .mem_en(mem_en),
+    82                                                       .mem_we(mem_we),
+    83                                                       .mem_addr(mem_addr),
+    84                                                       .mem_wdata(mem_wdata),
+    85                                                       .mem_rdata(mem_rdata)
+    86                                                   );
+    87                                               
+    88                                                   // FSM states
+    89                                                   reg [2:0] write_state;
+    90                                                   localparam W_IDLE = 3'd0,
+    91                                                              W_ADDR = 3'd1,
+    92                                                              W_DATA = 3'd2,
+    93                                                              W_RESP = 3'd3;
+    94                                               
+    95                                                   reg [2:0] read_state;
+    96                                                   localparam R_IDLE = 3'd0,
+    97                                                              R_ADDR = 3'd1,
+    98                                                              R_WAIT = 3'd2,
+    99                                                              R_DATA = 3'd3;
+    100                                              
+    101             1                      31588         always @(posedge ACLK or negedge ARESETn) begin
+    102                                                      if (!ARESETn) begin
+    103                                                          // Reset all outputs
+    104             1                         36                 AWREADY <= 1'b1;  // Ready to accept address
+    105             1                         36                 WREADY <= 1'b0;
+    106             1                         36                 BVALID <= 1'b0;
+    107             1                         36                 BRESP <= 2'b00;
+    108                                                          
+    109             1                         36                 ARREADY <= 1'b1;  // Ready to accept address
+    110             1                         36                 RVALID <= 1'b0;
+    111             1                         36                 RRESP <= 2'b00;
+    112             1                         36                 RDATA <= {DATA_WIDTH{1'b0}};
+    113             1                         36                 RLAST <= 1'b0;
+    114                                                          
+    115                                                          // Reset internal state
+    116             1                         36                 write_state <= W_IDLE;
+    117             1                         36                 read_state <= R_IDLE;
+    118             1                         36                 mem_en <= 1'b0;
+    119             1                         36                 mem_we <= 1'b0;
+    120             1                         36                 mem_addr <= {$clog2(MEMORY_DEPTH){1'b0}};
+    121             1                         36                 mem_wdata <= {DATA_WIDTH{1'b0}};
+    122                                                          
+    123                                                          // Reset address tracking
+    124             1                         36                 write_addr <= {ADDR_WIDTH{1'b0}};
+    125             1                         36                 read_addr <= {ADDR_WIDTH{1'b0}};
+    126             1                         36                 write_burst_len <= 8'b0;
+    127             1                         36                 read_burst_len <= 8'b0;
+    128             1                         36                 write_burst_cnt <= 8'b0;
+    129             1                         36                 read_burst_cnt <= 8'b0;
+    130             1                         36                 write_size <= 3'b0;
+    131             1                         36                 read_size <= 3'b0;
+    132                                              
+    133                                                          
+    134                                                      end else begin
+    135                                                          // Default memory disable
+    136             1                      31552                 mem_en <= 1'b0;
+    137             1                      31552                 mem_we <= 1'b0;
+    138                                              
+    139                                                          // --------------------------
+    140                                                          // Write Channel FSM
+    141                                                          // --------------------------
+    142                                                          case (write_state)
+    143                                                              W_IDLE: begin
+    144             1                      21623                         AWREADY <= 1'b1;
+    145             1                      21623                         WREADY <= 1'b0;
+    146             1                      21623                         BVALID <= 1'b0;
+    147                                                                  
+    148                                                                  if (AWVALID && AWREADY) begin
+    149                                                                      // Capture address phase information
+    150             1                        980                             write_addr <= AWADDR;
+    151             1                        980                             write_burst_len <= AWLEN;
+    152             1                        980                             write_burst_cnt <= AWLEN;
+    153             1                        980                             write_size <= AWSIZE;
+    154                                                                      
+    155             1                        980                             AWREADY <= 1'b0;
+    156             1                        980                             write_state <= W_ADDR;
+    157                                                                  end
+    158                                                              end
+    159                                                              
+    160                                                              W_ADDR: begin
+    161                                                                  // Transition to data phase
+    162             1                        980                         WREADY <= 1'b1;
+    163             1                        980                         write_state <= W_DATA;
+    164                                                              end
+    165                                                              
+    166                                                              W_DATA: begin
+    167                                                                  if (WVALID && WREADY) begin
+    168                                                                      // Check if address is valid
+    169                                                                      if (write_addr_valid && !write_boundary_cross) begin
+    170                                                                          // Perform write operation
+    171             1                       2884                                 mem_en <= 1'b1;
+    172             1                       2884                                 mem_we <= 1'b1;
+    173             1                       2884                                 mem_addr <= write_addr >> 2;  // Convert to word address
+    174             1                       2884                                 mem_wdata <= WDATA;
+    175                                                                      end
+    176                                                                      
+    177                                                                      // Check for last transfer
+    178                                                                      if (WLAST || write_burst_cnt == 0) begin
+    179             1                        980                                 WREADY <= 1'b0;
+    180             1                        980                                 write_state <= W_RESP;
+    181                                                                          
+    182                                                                          // Set response - delayed until write completion
+    183                                                                          if (!write_addr_valid || write_boundary_cross) begin
+    184             1                        283                                     BRESP <= 2'b10;  // SLVERR
+    185                                                                          end else begin
+    186             1                        697                                     BRESP <= 2'b00;  // OKAY
+    187                                                                          end
+    188             1                        980                                 BVALID <= 1'b1;
+    189                                                                      end else begin
+    190                                                                          // Continue burst - increment address
+    191             1                       3804                                 write_addr <= write_addr + write_addr_incr;
+    192             1                       3804                                 write_burst_cnt <= write_burst_cnt - 1'b1;
+    193                                                                      end
+    194                                                                  end
+    195                                                              end
+    196                                                              
+    197                                                              W_RESP: begin
+    198                                                                  if (BREADY && BVALID) begin
+    199             1                        980                             BVALID <= 1'b0;
+    200             1                        980                             BRESP <= 2'b00;
+    201             1                        980                             write_state <= W_IDLE;
+    202                                                                  end
+    203                                                              end
+    204                                                              
+    205             1                          4                     default: write_state <= W_IDLE;
+    206                                                          endcase
+    207                                              
+    208                                                          // --------------------------
+    209                                                          // Read Channel FSM
+    210                                                          // --------------------------
+    211                                                          case (read_state)
+    212                                                              R_IDLE: begin
+    213             1                      14617                         ARREADY <= 1'b1;
+    214             1                      14617                         RVALID <= 1'b0;
+    215             1                      14617                         RLAST <= 1'b0;
+    216                                                                  
+    217                                                                  if (ARVALID && ARREADY) begin
+    218                                                                      // Capture address phase information
+    219             1                        980                             read_addr <= ARADDR;
+    220             1                        980                             read_burst_len <= ARLEN;
+    221             1                        980                             read_burst_cnt <= ARLEN;
+    222             1                        980                             read_size <= ARSIZE;
+    223                                                                      
+    224             1                        980                             ARREADY <= 1'b0;
+    225             1                        980                             read_state <= R_ADDR;
+    226                                                                  end
+    227                                                              end
+    228                                                              
+    229                                                              R_ADDR: begin
+    230                                                                  // Start first read
+    231                                                                  if (read_addr_valid && !read_boundary_cross) begin
+    232             1                        719                             mem_en <= 1'b1;
+    233             1                        719                             mem_addr <= read_addr >> 2;  // Convert to word address
+    234                                                                  end
+    235             1                        980                         read_state <= R_WAIT;
+    236                                                              end
+    237                                                              
+    238                                                              R_WAIT:  begin
+    239             1                       4568                         read_state <= R_DATA;
+    240                                                              end
+    241                                                              
+    242                                                              
+    243                                                              R_DATA: begin
+    244                                                                  // Present read data
+    245                                                                  if (read_addr_valid && !read_boundary_cross) begin
+    246             1                       7243                             RDATA <= mem_rdata;
+    247             1                       7243                             RRESP <= 2'b00;  // OKAY
+    248                                                                  end else begin
+    249             1                       4140                             RDATA <= {DATA_WIDTH{1'b0}};
+    250             1                       4140                             RRESP <= 2'b10;  // SLVERR
+    251                                                                  end
+    252                                                                  
+    253             1                      11383                         RVALID <= 1'b1;
+    254             1                      11383                         RLAST <= (read_burst_cnt == 0);
+    255                                                                  
+    256                                                                  if (RREADY && RVALID) begin
+    257             1                       4568                             RVALID <= 1'b0;
+    258                                              
+    259                                                                      if (read_burst_cnt > 0) begin
+    260             1                       3588                                 read_addr <= read_addr + read_addr_incr;
+    261             1                       3588                                 read_burst_cnt <= read_burst_cnt - 1'b1;
+    262                                              
+    263             1                       3588                                 mem_en   <= 1'b1;
+    264             1                       3588                                 mem_we   <= 1'b0;
+    265             1                       3588                                 mem_addr <= (read_addr + read_addr_incr) >> 2;
+    266                                              
+    267             1                       3588                                 read_state <= R_WAIT;  // non-final-beat branch to return to R_WAIT
+    268                                                                      end else begin
+    269             1                        980                                 RLAST <= 1'b0;
+    270             1                        980                                 read_state <= R_IDLE;
+    271                                                                      end
+    272                                                                  end
+    273                                                              end
+    274                                                              
+    275             1                          4                     default: read_state <= R_IDLE;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        504       504         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\axi_top#dut  --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                              ACLK           4           4      100.00 
+                                       ARADDR[0-1]           2           2      100.00 
+                                      ARADDR[2-10]           4           4      100.00 
+                                        ARADDR[11]           3           4      100.00 
+                                     ARADDR[12-15]           3           3      100.00 
+                                           ARESETn           4           4      100.00 
+                                          ARLEN[0]           2           3      100.00 
+                                        ARLEN[1-3]           3           3      100.00 
+                                           ARREADY           4           4      100.00 
+                                           ARVALID           4           4      100.00 
+                                       AWADDR[0-1]           2           2      100.00 
+                                       AWADDR[2-6]           4           4      100.00 
+                                      AWADDR[7-10]           3           4      100.00 
+                                        AWADDR[11]           2           4      100.00 
+                                     AWADDR[12-15]           3           3      100.00 
+                                          AWLEN[0]           2           3      100.00 
+                                        AWLEN[1-3]           3           3      100.00 
+                                           AWREADY           4           4      100.00 
+                                           AWVALID           4           4      100.00 
+                                            BREADY           1           1      100.00 
+                                          BRESP[1]           3           3      100.00 
+                                            BVALID           4           4      100.00 
+                                        RDATA[0-5]           4           4      100.00 
+                                          RDATA[6]           3           4      100.00 
+                                          RDATA[7]           3           3      100.00 
+                                       RDATA[8-10]           4           4      100.00 
+                                      RDATA[11-13]           3           3      100.00 
+                                         RDATA[14]           4           4      100.00 
+                                         RDATA[15]           3           3      100.00 
+                                      RDATA[16-19]           4           4      100.00 
+                                      RDATA[20-21]           3           3      100.00 
+                                      RDATA[22-24]           4           4      100.00 
+                                      RDATA[25-26]           3           3      100.00 
+                                         RDATA[27]           4           4      100.00 
+                                         RDATA[28]           3           3      100.00 
+                                      RDATA[29-30]           4           4      100.00 
+                                         RDATA[31]           3           3      100.00 
+                                             RLAST           4           4      100.00 
+                                            RREADY           1           1      100.00 
+                                          RRESP[1]           3           3      100.00 
+                                            RVALID           4           4      100.00 
+                                          WDATA[0]           4           3      100.00 
+                                        WDATA[1-5]           4           4      100.00 
+                                          WDATA[6]           3           4      100.00 
+                                          WDATA[7]           3           3      100.00 
+                                       WDATA[8-10]           4           3      100.00 
+                                      WDATA[11-13]           3           3      100.00 
+                                         WDATA[14]           4           3      100.00 
+                                         WDATA[15]           3           3      100.00 
+                                      WDATA[16-19]           4           3      100.00 
+                                      WDATA[20-21]           3           3      100.00 
+                                      WDATA[22-24]           4           3      100.00 
+                                      WDATA[25-26]           3           3      100.00 
+                                         WDATA[27]           4           3      100.00 
+                                         WDATA[28]           3           3      100.00 
+                                      WDATA[29-30]           4           3      100.00 
+                                         WDATA[31]           3           3      100.00 
+                                             WLAST           4           4      100.00 
+                                            WREADY           4           4      100.00 
+                                            WVALID           4           4      100.00 
+                                     mem_addr[0-8]           4           4      100.00 
+                                       mem_addr[9]           3           4      100.00 
+                                            mem_en           4           4      100.00 
+                                    mem_rdata[0-5]           4           4      100.00 
+                                      mem_rdata[6]           3           4      100.00 
+                                      mem_rdata[7]           3           3      100.00 
+                                   mem_rdata[8-10]           4           4      100.00 
+                                  mem_rdata[11-13]           3           3      100.00 
+                                     mem_rdata[14]           4           4      100.00 
+                                     mem_rdata[15]           3           3      100.00 
+                                  mem_rdata[16-19]           4           4      100.00 
+                                  mem_rdata[20-21]           3           3      100.00 
+                                  mem_rdata[22-24]           4           4      100.00 
+                                  mem_rdata[25-26]           3           3      100.00 
+                                     mem_rdata[27]           4           4      100.00 
+                                     mem_rdata[28]           3           3      100.00 
+                                  mem_rdata[29-30]           4           4      100.00 
+                                     mem_rdata[31]           3           3      100.00 
+                                    mem_wdata[0-5]           4           4      100.00 
+                                      mem_wdata[6]           3           4      100.00 
+                                      mem_wdata[7]           3           3      100.00 
+                                   mem_wdata[8-10]           4           4      100.00 
+                                  mem_wdata[11-13]           3           3      100.00 
+                                     mem_wdata[14]           4           4      100.00 
+                                     mem_wdata[15]           3           3      100.00 
+                                  mem_wdata[16-19]           4           4      100.00 
+                                  mem_wdata[20-21]           3           3      100.00 
+                                  mem_wdata[22-24]           4           4      100.00 
+                                  mem_wdata[25-26]           3           3      100.00 
+                                     mem_wdata[27]           4           4      100.00 
+                                     mem_wdata[28]           3           3      100.00 
+                                  mem_wdata[29-30]           4           4      100.00 
+                                     mem_wdata[31]           3           3      100.00 
+                                            mem_we           4           4      100.00 
+                                    read_addr[0-1]           2           2      100.00 
+                                   read_addr[2-10]           4           4      100.00 
+                                     read_addr[11]           3           4      100.00 
+                                  read_addr[12-15]           3           3      100.00 
+                                   read_addr_valid           3           3      100.00 
+                               read_boundary_cross           3           3      100.00 
+                               read_burst_cnt[0-3]           3           3      100.00 
+                                 read_burst_len[0]           2           3      100.00 
+                               read_burst_len[1-3]           3           3      100.00 
+                                   read_state[0-1]           4           4      100.00 
+                                   write_addr[0-1]           2           2      100.00 
+                                  write_addr[2-10]           4           4      100.00 
+                                    write_addr[11]           3           4      100.00 
+                                 write_addr[12-15]           3           3      100.00 
+                                  write_addr_valid           3           3      100.00 
+                              write_boundary_cross           3           3      100.00 
+                              write_burst_cnt[0-3]           3           3      100.00 
+                                write_burst_len[0]           2           3      100.00 
+                              write_burst_len[1-3]           3           3      100.00 
+                                  write_state[0-1]           4           4      100.00 
+
+Total Node Count     =        252 
+Toggled Node Count   =        252 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (504 of 504 bins)
+
+=================================================================================
+=== Instance: /\axi_top#dut#mem_inst /mem_if_inst
+=== Design Unit: work.mem_if
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        156       156         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\axi_top#dut#mem_inst /mem_if_inst --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                               clk           4           4      100.00 
+                                     mem_addr[0-8]           4           4      100.00 
+                                       mem_addr[9]           3           4      100.00 
+                                            mem_en           4           4      100.00 
+                                    mem_rdata[0-5]           4           4      100.00 
+                                      mem_rdata[6]           3           4      100.00 
+                                      mem_rdata[7]           3           3      100.00 
+                                   mem_rdata[8-10]           4           4      100.00 
+                                  mem_rdata[11-13]           3           3      100.00 
+                                     mem_rdata[14]           4           4      100.00 
+                                     mem_rdata[15]           3           3      100.00 
+                                  mem_rdata[16-19]           4           4      100.00 
+                                  mem_rdata[20-21]           3           3      100.00 
+                                  mem_rdata[22-24]           4           4      100.00 
+                                  mem_rdata[25-26]           3           3      100.00 
+                                     mem_rdata[27]           4           4      100.00 
+                                     mem_rdata[28]           3           3      100.00 
+                                  mem_rdata[29-30]           4           4      100.00 
+                                     mem_rdata[31]           3           3      100.00 
+                                    mem_wdata[0-5]           4           4      100.00 
+                                      mem_wdata[6]           3           4      100.00 
+                                      mem_wdata[7]           3           3      100.00 
+                                   mem_wdata[8-10]           4           4      100.00 
+                                  mem_wdata[11-13]           3           3      100.00 
+                                     mem_wdata[14]           4           4      100.00 
+                                     mem_wdata[15]           3           3      100.00 
+                                  mem_wdata[16-19]           4           4      100.00 
+                                  mem_wdata[20-21]           3           3      100.00 
+                                  mem_wdata[22-24]           4           4      100.00 
+                                  mem_wdata[25-26]           3           3      100.00 
+                                     mem_wdata[27]           4           4      100.00 
+                                     mem_wdata[28]           3           3      100.00 
+                                  mem_wdata[29-30]           4           4      100.00 
+                                     mem_wdata[31]           3           3      100.00 
+                                            mem_we           4           4      100.00 
+                                             rst_n           4           4      100.00 
+
+Total Node Count     =         78 
+Toggled Node Count   =         78 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (156 of 156 bins)
+
+=================================================================================
+=== Instance: /\axi_top#dut#mem_inst /memory_assertions
+=== Design Unit: work.mem_sva
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       7         7         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/\axi_top#dut#mem_inst /memory_assertions/reset_assertion
+                     SVA/mem_sva.sv(57)                 0         72      39564          0      39636          0           4 off
+/\axi_top#dut#mem_inst /memory_assertions/write_enable_assertion
+                     SVA/mem_sva.sv(60)                 0       2884      36680         72      39636          0           4 off
+/\axi_top#dut#mem_inst /memory_assertions/address_known_assertion
+                     SVA/mem_sva.sv(63)                 0       7191      32373         72      39636          0           4 off
+/\axi_top#dut#mem_inst /memory_assertions/address_range_assertion
+                     SVA/mem_sva.sv(66)                 0       7191      32373         72      39636          0           4 off
+/\axi_top#dut#mem_inst /memory_assertions/write_data_assertion
+                     SVA/mem_sva.sv(69)                 0       2884      36680         72      39636          0           4 off
+/\axi_top#dut#mem_inst /memory_assertions/read_data_known_assertion
+                     SVA/mem_sva.sv(72)                 0       4307      35257         72      39636          0           4 off
+/\axi_top#dut#mem_inst /memory_assertions/read_data_stable_assertion
+                     SVA/mem_sva.sv(75)                 0      35239       4307         86      39636          4           8 off
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        14         0        14     0.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\axi_top#dut#mem_inst /memory_assertions
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File SVA/mem_sva.sv
+------------------------------------IF Branch------------------------------------
+    58                                   ***0***     Count coming in to IF
+    58              1                    ***0***             else `uvm_error("MEM_SVA", "Reset behavior failed")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    61                                   ***0***     Count coming in to IF
+    61              1                    ***0***             else `uvm_error("MEM_SVA", "mem_we asserted while mem_en is low")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    64                                   ***0***     Count coming in to IF
+    64              1                    ***0***             else `uvm_error("MEM_SVA", "Memory address is X/Z")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    67                                   ***0***     Count coming in to IF
+    67              1                    ***0***             else `uvm_error("MEM_SVA", "Memory address out of range")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    70                                   ***0***     Count coming in to IF
+    70              1                    ***0***             else `uvm_error("MEM_SVA", "Write data is X/Z")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    73                                   ***0***     Count coming in to IF
+    73              1                    ***0***             else `uvm_error("MEM_SVA", "Read data is X/Z")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    76                                   ***0***     Count coming in to IF
+    76              1                    ***0***             else `uvm_error("MEM_SVA", "Read data changed without a read")
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+
+Directive Coverage:
+    Directives                       7         7         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\axi_top#dut#mem_inst /memory_assertions/reset_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(81)
+                                                                                72 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/write_enable_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(83)
+                                                                              2884 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/address_known_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(85)
+                                                                              7191 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/address_range_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(87)
+                                                                              7191 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/write_data_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(89)
+                                                                              2884 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/read_data_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(91)
+                                                                              4307 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/read_data_stable_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(93)
+                                                                              35239 Covered   
+
+=================================================================================
+=== Instance: /\axi_top#dut#mem_inst 
+=== Design Unit: work.axi4_memory
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         5         5         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\axi_top#dut#mem_inst 
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File rtl/Fixed_RTL/axi_memory.v
+------------------------------------IF Branch------------------------------------
+    22                                     13103     Count coming in to IF
+    22              1                         36             if (!rst_n) begin
+    27              1                       7191             else if (mem_en) begin
+                                            5876     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    28                                      7191     Count coming in to IF
+    28              1                       2884                 if (mem_we)
+    30              1                       4307                  else 
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       7         7         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\axi_top#dut#mem_inst  --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File rtl/Fixed_RTL/axi_memory.v
+    1                                                module axi4_memory #(
+    2                                                    parameter DATA_WIDTH = 32,
+    3                                                    parameter ADDR_WIDTH = 10,   
+    4                                                    parameter DEPTH = 1024
+    5                                                )(
+    6                                                    input  wire                     clk,
+    7                                                    input  wire                     rst_n,
+    8                                                    
+    9                                                    input  wire                     mem_en,
+    10                                                   input  wire                     mem_we,
+    11                                                   input  wire [ADDR_WIDTH-1:0]    mem_addr,
+    12                                                   input  wire [DATA_WIDTH-1:0]    mem_wdata,
+    13                                                   output reg  [DATA_WIDTH-1:0]    mem_rdata
+    14                                               );
+    15                                               
+    16                                                   // Memory array
+    17                                                   reg [DATA_WIDTH-1:0] memory [0:DEPTH-1];
+    18                                                   
+    19                                                   integer j;
+    20                                               
+    21              1                      13103         always @(posedge clk or negedge rst_n) begin
+    22                                                       if (!rst_n) begin
+    23              1                         36                 mem_rdata <= 0;
+    24              1                         36                 for (j = 0; j < DEPTH; j = j + 1)
+    24              2                      36864     
+    25              1                      36864                     memory[j] = 0;
+    26                                                       end
+    27                                                       else if (mem_en) begin
+    28                                                           if (mem_we)
+    29              1                       2884                     memory[mem_addr] <= mem_wdata;
+    30                                                            else 
+    31              1                       4307                    mem_rdata <= memory[mem_addr] ;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        156       156         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\axi_top#dut#mem_inst  --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                               clk           4           4      100.00 
+                                     mem_addr[0-8]           4           4      100.00 
+                                       mem_addr[9]           3           4      100.00 
+                                            mem_en           4           4      100.00 
+                                    mem_rdata[0-5]           4           4      100.00 
+                                      mem_rdata[6]           3           4      100.00 
+                                      mem_rdata[7]           3           3      100.00 
+                                   mem_rdata[8-10]           4           4      100.00 
+                                  mem_rdata[11-13]           3           3      100.00 
+                                     mem_rdata[14]           4           4      100.00 
+                                     mem_rdata[15]           3           3      100.00 
+                                  mem_rdata[16-19]           4           4      100.00 
+                                  mem_rdata[20-21]           3           3      100.00 
+                                  mem_rdata[22-24]           4           4      100.00 
+                                  mem_rdata[25-26]           3           3      100.00 
+                                     mem_rdata[27]           4           4      100.00 
+                                     mem_rdata[28]           3           3      100.00 
+                                  mem_rdata[29-30]           4           4      100.00 
+                                     mem_rdata[31]           3           3      100.00 
+                                    mem_wdata[0-5]           4           4      100.00 
+                                      mem_wdata[6]           3           4      100.00 
+                                      mem_wdata[7]           3           3      100.00 
+                                   mem_wdata[8-10]           4           4      100.00 
+                                  mem_wdata[11-13]           3           3      100.00 
+                                     mem_wdata[14]           4           4      100.00 
+                                     mem_wdata[15]           3           3      100.00 
+                                  mem_wdata[16-19]           4           4      100.00 
+                                  mem_wdata[20-21]           3           3      100.00 
+                                  mem_wdata[22-24]           4           4      100.00 
+                                  mem_wdata[25-26]           3           3      100.00 
+                                     mem_wdata[27]           4           4      100.00 
+                                     mem_wdata[28]           3           3      100.00 
+                                  mem_wdata[29-30]           4           4      100.00 
+                                     mem_wdata[31]           3           3      100.00 
+                                            mem_we           4           4      100.00 
+                                             rst_n           4           4      100.00 
+
+Total Node Count     =         78 
+Toggled Node Count   =         78 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (156 of 156 bins)
+
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\axi_top#dut /mem_inst/memory_assertions/reset_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(81)
+                                                                                72 Covered   
+/\axi_top#dut /mem_inst/memory_assertions/write_enable_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(83)
+                                                                              2884 Covered   
+/\axi_top#dut /mem_inst/memory_assertions/address_known_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(85)
+                                                                              7191 Covered   
+/\axi_top#dut /mem_inst/memory_assertions/address_range_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(87)
+                                                                              7191 Covered   
+/\axi_top#dut /mem_inst/memory_assertions/write_data_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(89)
+                                                                              2884 Covered   
+/\axi_top#dut /mem_inst/memory_assertions/read_data_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(91)
+                                                                              4307 Covered   
+/\axi_top#dut /mem_inst/memory_assertions/read_data_stable_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(93)
+                                                                              35239 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/reset_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(81)
+                                                                                72 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/write_enable_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(83)
+                                                                              2884 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/address_known_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(85)
+                                                                              7191 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/address_range_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(87)
+                                                                              7191 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/write_data_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(89)
+                                                                              2884 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/read_data_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(91)
+                                                                              4307 Covered   
+/\axi_top#dut#mem_inst /memory_assertions/read_data_stable_cover 
+                                         mem_sva Verilog  SVA  SVA/mem_sva.sv(93)
+                                                                              35239 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 14
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/\axi_top#dut /mem_inst/memory_assertions/reset_assertion
+                     SVA/mem_sva.sv(57)                 0         72      39564          0      39636          0           4 off
+/\axi_top#dut /mem_inst/memory_assertions/write_enable_assertion
+                     SVA/mem_sva.sv(60)                 0       2884      36680         72      39636          0           4 off
+/\axi_top#dut /mem_inst/memory_assertions/address_known_assertion
+                     SVA/mem_sva.sv(63)                 0       7191      32373         72      39636          0           4 off
+/\axi_top#dut /mem_inst/memory_assertions/address_range_assertion
+                     SVA/mem_sva.sv(66)                 0       7191      32373         72      39636          0           4 off
+/\axi_top#dut /mem_inst/memory_assertions/write_data_assertion
+                     SVA/mem_sva.sv(69)                 0       2884      36680         72      39636          0           4 off
+/\axi_top#dut /mem_inst/memory_assertions/read_data_known_assertion
+                     SVA/mem_sva.sv(72)                 0       4307      35257         72      39636          0           4 off
+/\axi_top#dut /mem_inst/memory_assertions/read_data_stable_assertion
+                     SVA/mem_sva.sv(75)                 0      35239       4307         86      39636          4           8 off
+/\axi_top#dut#mem_inst /memory_assertions/reset_assertion
+                     SVA/mem_sva.sv(57)                 0         72      39564          0      39636          0           4 off
+/\axi_top#dut#mem_inst /memory_assertions/write_enable_assertion
+                     SVA/mem_sva.sv(60)                 0       2884      36680         72      39636          0           4 off
+/\axi_top#dut#mem_inst /memory_assertions/address_known_assertion
+                     SVA/mem_sva.sv(63)                 0       7191      32373         72      39636          0           4 off
+/\axi_top#dut#mem_inst /memory_assertions/address_range_assertion
+                     SVA/mem_sva.sv(66)                 0       7191      32373         72      39636          0           4 off
+/\axi_top#dut#mem_inst /memory_assertions/write_data_assertion
+                     SVA/mem_sva.sv(69)                 0       2884      36680         72      39636          0           4 off
+/\axi_top#dut#mem_inst /memory_assertions/read_data_known_assertion
+                     SVA/mem_sva.sv(72)                 0       4307      35257         72      39636          0           4 off
+/\axi_top#dut#mem_inst /memory_assertions/read_data_stable_assertion
+                     SVA/mem_sva.sv(75)                 0      35239       4307         86      39636          4           8 off
+
+Total Coverage By Instance (filtered view): 95.42%
+
